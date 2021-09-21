@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: 'postgres:latest'
+    container_name: db_coupon
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=eyali
+      - POSTGRES_PASSWORD=password1!
+      - POSTGRES_DB=mydb
